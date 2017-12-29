@@ -17,9 +17,10 @@
         - dfsuses depth-first search
         - astaruses A* search, with a suitable heuristic function
     *cost-functionis one of:
-        - segmentstries to find a route with the fewest number of “turns” (i.e. edges of the graph)
+    
         - distancetries to find a route with the shortest total distance
         - timetries to find the fastest route, for a car that always travels at the speed limit
+        - segmentstries to find a route with the fewest number of “turns” (i.e. edges of the graph)
 
 ```
 The output of your program should be a nicely-formatted, human-readable list of directions, including

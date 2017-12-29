@@ -21,7 +21,7 @@
         - timetries to find the fastest route, for a car that always travels at the speed limit
         - segmentstries to find a route with the fewest number of “turns” (i.e. edges of the graph)
 
-
+```
 The output of your program should be a nicely-formatted, human-readable list of directions, including
 travel times, distances, intermediate cities, and highway names, similar to what Google Maps or another
 site might produce. In addition, thelastline of output should have the following machine-readable
@@ -44,6 +44,7 @@ Extra credit.For some extra credit, implement two additional cost-functions:long
 find the longest distance driving path between the two cities that does not visit the same city twice,
 andstatetourshould try to find a route with the shortest total distance that includes passing through
 at least one city in each of the 48 contiguous U.S. states.
+```
 
 
 2. The course staff of a certain Computer Science course randomly assigns students to teams for their first

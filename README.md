@@ -120,20 +120,20 @@ which proposes three groups, with two people, three people, and one person, resp
 
 the valid successors are:
 
+```
+ 1   2   3   4       1   2    3   4          1    2   3   4
+ 5   6   7   8       5   6    7   8          5    6   7   8
+ 9       10  12          9    10  12         9    10  12
+ 13 14   15  11      13 14    15  11         13   14  15  11
 
-### 1   2   3   4       1   2    3   4          1    2   3   4
-### 5   6   7   8       5   6    7   8          5    6   7   8
-### 9       10  12          9    10  12         9    10  12
-### 13 14   15  11      13 14    15  11         13   14  15  11
+ 1   2       4       1   2   3   4       1   2   3   4
 
-### 1   2       4       1   2   3   4       1   2   3   4
+ 5   6   3   8       5   6       8       5   6   7   8
 
-### 5   6   3   8       5   6       8       5   6   7   8
+ 9   10  7   12      9   10  7   12      9   10  15  12
 
-### 9   10  7   12      9   10  7   12      9   10  15  12
-
-### 13  14  15  11      13  14  15  11      13  14      11
-
+ 13  14  15  11      13  14  15  11      13  14      11
+```
 ```
 The goal is to find a short sequence of moves that restores the canonical configuration (on the left
 above) given an initial board configuration. Write a program called solver16.py that finds a solution

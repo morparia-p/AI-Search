@@ -12,14 +12,14 @@
     where:
     * start-cityandend-cityare the cities we need a route between.
     * routing-algorithmis one of:
-          - bfsuses breadth-first search (which ignores edge weights in the state graph)
-          - uniformis uniform cost search (the variant of bfs that takes edge weights into consideration)
-          - dfsuses depth-first search
-          - astaruses A* search, with a suitable heuristic function
+        - bfsuses breadth-first search (which ignores edge weights in the state graph)  
+        - uniformis uniform cost search (the variant of bfs that takes edge weights into consideration)
+        - dfsuses depth-first search
+        - astaruses A* search, with a suitable heuristic function
     *cost-functionis one of:
-          - segmentstries to find a route with the fewest number of “turns” (i.e. edges of the graph)
-          - distancetries to find a route with the shortest total distance
-          - timetries to find the fastest route, for a car that always travels at the speed limit
+        - segmentstries to find a route with the fewest number of “turns” (i.e. edges of the graph)
+        - distancetries to find a route with the shortest total distance
+        - timetries to find the fastest route, for a car that always travels at the speed limit
 
 ```
 The output of your program should be a nicely-formatted, human-readable list of directions, including

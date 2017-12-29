@@ -117,22 +117,22 @@ which proposes three groups, with two people, three people, and one person, resp
 
 ### 13 14 15 11
 
-```
+
 the valid successors are:
-```
-```
-1 2 3 4 1 2 3 4 1 2 3 4
-5 6 7 8 5 6 7 8 5 6 7 8
-9 10 12 9 10 12 9 10 12
-13 14 15 11 13 14 15 11 13 14 15 11
-```
-### 1 2 4 1 2 3 4 1 2 3 4
 
-### 5 6 3 8 5 6 8 5 6 7 8
 
-### 9 10 7 12 9 10 7 12 9 10 15 12
+### 1   2   3   4       1   2    3   4          1    2   3   4
+### 5   6   7   8       5   6    7   8          5    6   7   8
+### 9       10  12          9    10  12         9    10  12
+### 13 14   15  11      13 14    15  11         13   14  15  11
 
-### 13 14 15 11 13 14 15 11 13 14 11
+### 1   2       4       1   2   3   4       1   2   3   4
+
+### 5   6   3   8       5   6       8       5   6   7   8
+
+### 9   10  7   12      9   10  7   12      9   10  15  12
+
+### 13  14  15  11      13  14  15  11      13  14      11
 
 ```
 The goal is to find a short sequence of moves that restores the canonical configuration (on the left
@@ -153,13 +153,3 @@ beginning at 1). For instance, the six successors shown above would correspond t
 moves (with respect to the initial board state):
 R13 R23 L13 D23 D13 U
 ```
-## What to turn in
-
-Turn in the three programs on GitHub (remember toadd,commit,push) — we’ll grade whatever version
-you’ve put there as of 11:59PM on the due date. To make sure that the latest version of your work has
-been accepted by GitHub, you can log into the github.iu.edu website and browse the code online. Your
-programs must obey the input and output formats we specify above so that we can run them,
-and your code must work on the SOIC Linux computers.We will provide a test program soon to
-help you check this.
-
-

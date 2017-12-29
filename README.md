@@ -9,7 +9,7 @@ that find good driving directions between pairs of cities given by the user. You
 run on the command line like this:
 ./route.py [start-city] [end-city] [routing-algorithm] [cost-function]
 where: <br />
-..* start-city and end-city are the cities we need a route between. <br />
+* start-city and end-city are the cities we need a route between. <br />
   routing-algorithm is one of:
      bfs uses breadth-first search (which ignores edge weights in the state graph)
      uniform is uniform cost search (the variant of bfs that takes edge weights into consideration)

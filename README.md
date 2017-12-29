@@ -9,16 +9,16 @@ that find good driving directions between pairs of cities given by the user. You
 run on the command line like this:
 ./route.py [start-city] [end-city] [routing-algorithm] [cost-function]
 where: <br />
-* start-city and end-city are the cities we need a route between. <br />
-  routing-algorithm is one of:
-     bfs uses breadth-first search (which ignores edge weights in the state graph)
-     uniform is uniform cost search (the variant of bfs that takes edge weights into consideration)
-     dfs uses depth-first search
-     astar uses A* search, with a suitable heuristic function
- cost-function is one of:
-   segments tries to find a route with the fewest number of \turns" (i.e. edges of the graph)
-   distance tries to find a route with the shortest total distance
-   time tries to nd the fastest route, for a car that always travels at the speed limit
+  * start-city and end-city are the cities we need a route between. <br />
+  *routing-algorithm is one of:
+     *bfs uses breadth-first search (which ignores edge weights in the state graph)
+     *uniform is uniform cost search (the variant of bfs that takes edge weights into consideration)
+     *dfs uses depth-first search
+     *astar uses A* search, with a suitable heuristic function
+  *cost-function is one of:
+    *segments tries to find a route with the fewest number of \turns" (i.e. edges of the graph)
+    *distance tries to find a route with the shortest total distance
+    *time tries to find the fastest route, for a car that always travels at the speed limit
 
 The output of your program should be a nicely-formatted, human-readable list of directions, including
 travel times, distances, intermediate cities, and highway names, similar to what Google Maps or another
@@ -67,18 +67,18 @@ this is not possible because of con
 icting preferences. So instead, being selfish, the course staff would
 like to choose the group assignments that minimize the total amount of work they'll have to do. They
 estimate that:
-   They need k minutes to grade each assignment, so total grading time is k times number of teams.
-   Each student who requested a specific group size and was assigned to a different group size will
+  *They need k minutes to grade each assignment, so total grading time is k times number of teams.
+  *Each student who requested a specific group size and was assigned to a different group size will
     complain to the instructor after class, taking 1 minute of the instructor's time.
-   Each student who is not assigned to someone they requested will send a complaint email, which
+  *Each student who is not assigned to someone they requested will send a complaint email, which
   will take n minutes for the instructor to read and respond. If a student requested to work with
   multiple people, then they will send a separate email for each person they were not assigned to.
-   Ea1ch student who is assigned to someone they requested not to work with (in question 4 above)
+  * Each student who is assigned to someone they requested not to work with (in question 4 above)
   will request a meeting with the instructor to complain, and each meeting will last m minutes. If
   a student requested not to work with two specific students and is assigned to a group with both
   of them, then they will request 2 meetings.
  
- The total time spent by the course staff is equal to the sum of these components. Your goal is to write
+The total time spent by the course staff is equal to the sum of these components. Your goal is to write
 a program to find an assignment of students to teams that minimizes the total amount of work the
 course staff needs to do, subject to the constraint that no team may have more than 3 students. Your
 program should take as input a text file that contains each student's response to these questions on a

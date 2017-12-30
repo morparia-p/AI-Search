@@ -1,6 +1,7 @@
 import sys
 import itertools
 
+# Contribution by Ronak Parekh
 #   On burrow.soic.indiana.edu use this command to run: python ./assign.py input.txt k m n
 #   The given problem is to minimize the amount of grading time for the number of teams to be formed given the survey
 #   of user inputs.
